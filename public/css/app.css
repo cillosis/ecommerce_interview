@@ -1,0 +1,72 @@
+/** 
+ * NAVIGATION SECTION
+ ****************************************************/
+.navigation {
+	width: 100%;
+	padding: 0;
+	background-color: #7dae59;
+	border-bottom: 1px solid #DDD;
+	margin: 0 0 20px 0;
+	font-size: 2em;
+}
+.navigation .logo {
+	padding: 20px;
+}
+.navigation .logo img {
+	height: 50px;
+	width: auto;
+}
+.navigation h3 {
+	position: relative;
+	top: -25px;
+	color: #FFFFFF;
+}
+
+/** 
+ * CONTENT SECTION
+ ****************************************************/
+body {
+	line-height: 1.4em;
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
+}
+.table-products-container {
+	padding: 0 20px 20px 20px;
+}
+.table-products {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 1em;
+}
+.table-products tbody td {
+	border: 1px solid #EEE;
+	padding: 3px;
+	color: #666;
+}
+
+.table-products tbody td a {
+	color: #0f98da;
+	text-decoration: none;
+}
+.table-products tbody td a:hover {
+	color: #46bbff;
+	text-decoration: none;
+}
+.table-products thead th {
+	background-color: #ececec;
+    color: #717171;
+    border: 1px solid #cecece;
+    border-bottom: 2px solid #b3b3b3;
+    padding: 3px;
+}
+.table-products .cell-shrink {
+	width: 1%;
+	white-space: nowrap;
+}
+.table-products .cell-center {
+	text-align: center;
+}

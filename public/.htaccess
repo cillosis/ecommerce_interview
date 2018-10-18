@@ -1,0 +1,29 @@
+# <IfModule mod_rewrite.c>
+
+#     <IfModule mod_negotiation.c>
+#         Options -MultiViews
+#     </IfModule>
+
+#     RewriteEngine On
+
+#     <FilesMatch "\.(?i:gif|jpe?g|png|ico|css|js|swf|woff)$">
+#         <IfModule mod_headers.c>
+#             # Cache Resources for 24 hours
+#             Header set Cache-Control "max-age=86400, public, must-revalidate"
+#         </IfModule>
+#     </FilesMatch>
+
+#     # HTTP to HTTPS Redirect
+#     #RewriteCond %{HTTPS} !=on
+#     #RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [L,R=301]
+
+#     # Redirect Trailing Slashes If Not A Folder...
+#     RewriteCond %{REQUEST_FILENAME} !-d
+#     RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+#     # Handle Front Controller...
+#     RewriteCond %{REQUEST_FILENAME} !-d
+#     RewriteCond %{REQUEST_FILENAME} !-f
+#     RewriteRule ^ index.php [L]
+
+# </IfModule>
